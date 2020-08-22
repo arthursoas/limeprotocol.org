@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Callout, H1, H2, Divider, UL, Code } from "@blueprintjs/core";
+import { Callout, H1, H2, Divider, UL, Code, Pre } from "@blueprintjs/core";
+
+import MessageJSON from './message.json';
 
 export default class Specification extends Component {
   render() {
@@ -135,6 +137,17 @@ export default class Specification extends Component {
             for all envelopes. Any value set in this property should not change the behavior of the server.
           </li>
         </UL>
+
+        <H2 className="mt4">Message</H2>
+        <p>
+          A message provides the transport of a content between nodes in a network.
+        </p>
+        <p>
+          JSON Schema:
+        </p>
+        <Pre className="editor editor-colors" lang="json">
+          {JSON.stringify(MessageJSON, null, 2)}
+        </Pre>
       </div>
     );
   };
