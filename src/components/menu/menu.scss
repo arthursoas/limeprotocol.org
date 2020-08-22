@@ -1,0 +1,10 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+#left-menu {
+  background-color: $lime4;
+  color: $dark-gray1;
+
+  svg {
+    color: $dark-gray1;
+  }
+}
