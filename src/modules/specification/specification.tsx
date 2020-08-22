@@ -145,7 +145,7 @@ export default class Specification extends Component {
         <p>
           JSON Schema:
         </p>
-        <Pre className="editor editor-colors" lang="json">
+        <Pre lang="json">
           {JSON.stringify(MessageJSON, null, 2)}
         </Pre>
       </div>
